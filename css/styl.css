@@ -281,7 +281,7 @@ h2 {
 
 .u_p_right h3 {
   font-size: 18px;
-  padding-top: 26px;
+  padding-top: 20px;
   text-align: left;
   display: inline-block;
   border-bottom: 1px solid #1e90ff;
@@ -295,7 +295,7 @@ h2 {
 .u_p_right p {
   color: black;
   font-size: 16px;
-  padding: 14px 10px 0 26px;
+  padding: 12px 10px 0 26px;
   text-align: left;
 }
 
