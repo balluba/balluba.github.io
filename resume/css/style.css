@@ -1,0 +1,85 @@
+	body {
+		background-color: ghostWhite;
+	}
+	
+	.imgcon {
+		width: 220px;
+		margin: 10px 0;
+	}
+	
+	h1 {
+		margin: 0;
+		font-size: 40px;
+		padding: 10px;
+	}
+	
+	h2 {
+		font-size: 28px;
+	}
+	
+	.myName {
+		padding-left: 50px;
+	}
+	
+	.myName h2 {
+		font-size: 34px;
+		margin-top: 10px;
+	}
+	
+	.jumbo {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.skills button {
+		margin-top: 5px;
+	}
+	
+	.skills button:hover {
+		cursor: default;
+	}
+	
+	.title {
+		font-size: 28px;
+	}
+	
+	.summary {
+		font-size: 25px;
+	}
+	
+	.add {
+		background-color: dodgerBlue;
+	}
+	
+	.con {
+		padding: 15px;
+	}
+	
+	.left section, .right section {
+		margin-top: 50px;
+	}
+	
+	section dl dt {
+		margin-top: 30px;
+		font-size: 25px;
+	}
+	
+	section ul {
+		margin-top: 30px;
+	}
+	
+	.meter {
+		margin: 8px 0;
+	}
+	
+	.interests h3 {
+		margin-bottom: 30px;
+	}
+	
+	.interests button {
+		margin-bottom: 10px;
+	}
+	
+	footer {
+		margin-top: 30px;
+	}
