@@ -59,12 +59,9 @@ button:hover {
   bottom: 15px;
   right: 15px;
   z-index: 1;
-  border: none;
-  outline: none;
   color: white;
   background-color: #0080ff;
-  width: 65px;
-  height: 65px;
+  padding: 24px 26px;
   border-radius: 50%;
   font-size: 20px;
 }
@@ -238,7 +235,7 @@ h2 {
   border-radius: 50%;
   display: inline-block;
   margin: auto;
-  margin: 115px 3px 0 3px;
+  margin: 120px 3px 0 3px;
 }
 
 .su_dot {
@@ -602,8 +599,7 @@ h2 {
   #myBtn {
     bottom: 30px;
     right: 30px;
-    width: 80px;
-    height: 80px;
+    padding: 28px 30px;
     font-size: 28px;
   }
 
@@ -661,7 +657,7 @@ h2 {
 
   .pc_nav ul li {
     float: left;
-    width: 14.28%;
+    width: 16.6%;
     text-align: center;
   }
 
