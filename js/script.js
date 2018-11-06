@@ -55,11 +55,6 @@ function scrollFunction() {
     }
 }
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // google map
 function initialize() {
   var latlng = new google.maps.LatLng(12.972442, 77.580643);
