@@ -58,7 +58,7 @@ button:hover {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 1;
+  z-index: 99;
   color: white;
   background-color: #0080ff;
   height: 74px;
