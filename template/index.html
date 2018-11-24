@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+<header style="background-color: #2d2d2d;">
+  <nav class="flex-con wrapper">
+    <div class="left">
+      <h1 style="display:inline;color: white">Website.com</h1>
+      <ul class="pc">
+        <li><a href="#" style="color:green">Home</a></li>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <div class="relative">
+        <button id="ham" class="mobile">
+          <i class="fa fa-bars"></i>
+        </button>
+        <ul class="mobile drop">
+          <li><a href="#">Link1</a></li>
+          <li><a href="#">Link2</a></li>
+          <li><input maxlength="25" placeholder="Maximum 25 characters"><button><i class="fa fa-search"></i></button></li>
+        </ul>
+      </div>
+      <button class="pc sbutton">Search</button>
+      <input class="pc search" maxlength="25" placeholder="Maximum 25 characters">
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="wrapper">
+      <h2>Welcome It's Hero Text.</h2>
+      <p>Lorem Ipsum is simply dummy text. <br> lorem lorem ipsum ipsum.</p>
+      <button>Learn More</button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="circles-con">
+      <section>
+        <div></div>
+        <h2>Heading 1</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book electronic typesetting, unchanged...
+        </p>
+        <button> View details >> </button>
+      </section>
+
+      <section>
+        <div></div>
+        <h2>Heading 2</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book electronic typesetting, unchanged...
+        </p>
+        <button> View details >> </button>
+      </section>
+
+      <section>
+        <div></div>
+        <h2>Heading 3</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book electronic typesetting, unchanged...
+        </p>
+        <button> View details >> </button>
+      </section>
+    </div>
+    <hr>
+    <section class="second-block">
+      <div class="dis">
+        <h2>First Feature Heading.</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+        </p>
+      </div>
+        <div class="sblock-img">
+
+        </div>
+    </section>
+    <hr>
+
+    <section class="second-blockm">
+      <div class="dis">
+        <h2>Second Feature Heading.</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+        </p>
+      </div>
+        <div class="sblock-img">
+
+        </div>
+    </section>
+    <hr>
+
+    <section class="second-block">
+      <div class="dis">
+        <h2>Third Feature Heading.</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+          when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged.
+        </p>
+      </div>
+        <div class="sblock-img">
+
+        </div>
+    </section>
+    <hr>
+
+  </div>
+</main>
+<footer class="wrapper" id="footer">
+  <div class="footer-one">
+    <small>&copy; 2017 Company, Inc,</small>
+    <ul class="footer-li">
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+  </div>
+  <div class="footer-two">
+    <small><a href="#home"> Go to top </a></small>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script>
+$(function() {
+  $("#ham").click(function(){
+    $(".drop").toggle(500);
+    $("#ham i").toggleClass("fa-bars fa-remove");
+  });
+});
+</script>
+</body>
+</html>
