@@ -1,0 +1,325 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: Roboto;
+}
+
+body{
+  background-color: ghostWhite;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pc {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper{
+  margin: auto 20px;
+}
+
+header {
+  background-color: #2d2d2d;
+
+}
+
+.logo {
+  width: 50%;
+  padding: 22px 0;
+  color: white;
+}
+
+.left {
+  width: 50%;
+}
+
+.mobile-button {
+  padding: 10px 18px;
+  font-size: 18px;
+  border: 1px solid white;
+  background-color: transparent;
+  float: right;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.mobile-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#ham {
+  padding: 3px 15px;
+  background-color: #1d1d1d;
+  font-size: 29px;
+  float: right;
+  border: 1px solid white;
+  position: relative;
+}
+
+#ham:hover {
+  background-color: #000;
+  color: grey;
+}
+
+.mobile-list {
+  position: absolute;
+  right: -34%;
+  top: 145%;
+  width: 400%;
+  background-color: #2d2d2d;
+  font-size: 25px;
+  display: none;
+}
+
+.mobile-list li a {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.mobile-list li a:hover {
+  background-color: #000;
+  color: tomato;
+}
+
+.mobile-button,#ham {
+  margin-top: 20px;
+}
+
+.hero {
+  height: 590px;
+  background: #3d3d3d;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 60px;
+  font-style: italic;
+  font-family: cursive;
+  color: white;
+}
+
+.con {
+  display: none;
+}
+
+.items-con {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.items {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  margin-top: 50px;
+  box-shadow: 2px 2px 3px grey;
+  cursor: pointer;
+}
+
+.pricetag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: white;
+  display: inline-block;
+  padding: 10px;
+}
+
+.item-img {
+  width: 100%;
+  height: 250px;
+  background-color: grey;
+}
+
+.item-des {
+  margin: 20px;
+}
+
+.item-des p {
+  font-size: 17px;
+  padding: 18px 0;
+}
+
+.view {
+  background-color: transparent;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  transition: 0.3s;
+}
+
+.view:hover {
+  background-color: grey;
+}
+
+footer {
+  background-color: #2d2d2d;
+  width: 100%;
+  text-align: center;
+}
+
+.fo {
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.divi, .detail {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 30px 0;
+}
+
+.detail {
+  border-bottom: none;
+  padding-top: 50px;
+}
+
+.divi li a{
+  color: white;
+}
+
+.detail li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.detail li, .detail p {
+  color: white;
+}
+
+.detail li:hover,.divi li a:hover{
+  color: tomato;
+}
+
+.copy {
+  padding: 30px;
+  border-top: 2px solid grey;
+  text-align: center;
+}
+
+small {
+  color: white;
+}
+
+@media screen and (min-width:1200px){
+  .pc {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .wrapper {
+    width: 1200px;
+    margin:auto;
+  }
+
+  .list {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .list {
+    display: block;
+  }
+
+  .list li {
+    display: inline;
+  }
+
+  .list li a, .list li button {
+    display: inline-block;
+    width:16%;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .list li a {
+    padding: 30px 0;
+  }
+
+  .list li a:hover {
+    color: tomato;
+  }
+
+  .list li button {
+    padding: 10px 0;
+    font-size: 18px;
+    border: 2px solid white;
+    background-color: transparent;
+  }
+
+  .list li button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .items{
+    width: 30%;
+
+  }
+
+  .con {
+    display: block;
+  }
+
+  .con {
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: lightgrey;
+  }
+
+  .screw:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+  .divi {
+    width:22%;
+    border-bottom: none;
+  }
+
+  .detail {
+    width:34%;
+    border-bottom: none;
+  }
+
+  .fo {
+    padding: 70px 0;
+  }
+
+  footer {
+    text-align: left;
+  }
+}

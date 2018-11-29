@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: ghostWhite;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.wrapper {
+  margin: auto 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  padding-top: 8px;
+  color: white;
+  font-size: 18px;
+}
+
+.left i {
+  font-size: 20px;
+}
+
+.right {
+  width: 50%;
+}
+
+.right button {
+  float: right;
+  font-size: 35px;
+  padding: 2px 18px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid grey;
+  outline: none;
+}
+
+.right button i {
+  color: grey;
+}
+
+.right button:hover {
+  background-color: #000;
+}
+
+header {
+  background-color: #2d2d2d;
+}
+
+.about-con {
+  flex-wrap: wrap;
+}
+
+.about, .contact {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.about h3, .contact h3 {
+  font-size: 28px;
+  color: white;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.about p {
+  color: grey;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact ul li {
+  padding-bottom: 4px;
+}
+
+.contact ul li a {
+  color: lightgrey;
+  padding-bottom: 10px;
+}
+
+.contact ul li a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+.hero-wrap {
+  margin: auto 35px;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  color: grey;
+  text-align: center;
+  padding: 70px 0;
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+.hero h2 {
+  color: black;
+  font-size: 48px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}
+
+.hero p {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.hero button {
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 12px 15px;
+  margin-top: 25px;
+}
+
+.hero button.blue:hover {
+  background-color: royalBlue;
+}
+
+.hero button.grey:hover {
+  background-color: #2d2d2d;
+}
+
+.blue {
+  background-color: dodgerBlue;
+}
+
+.grey {
+  background-color: #4d4d4d;
+}
+
+.thumb-con {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumb {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.thum-img {
+  background-color: #3d3d3d;
+  width: 100%;
+  height: 230px;
+  border-radius: 7px 7px 0 0;
+}
+
+.thum-des {
+  background-color: #fff;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+
+.thum-des p {
+  line-height: 32px;
+  padding-bottom: 10px;
+}
+
+.thum-des button,.thum-des span{
+  margin: 5px 0;
+}
+
+.thum-des button {
+  float: left;
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 15px;
+  color: grey;
+  background-color: transparent;
+}
+
+.thum-des button:hover {
+  box-shadow: 3px 3px 3px lightgrey;
+  background-color: whiteSmoke;
+  color: black;
+}
+
+.first {
+  border-radius: 5px 0 0 5px;
+}
+
+.second {
+  border-radius: 0 5px 5px 0;
+}
+
+.thum-des span {
+  float: right;
+  font-size: 17px;
+  color: grey;
+  padding-top: 4px;
+}
+
+
+@media screen and (min-width: 1120px){
+  .wrapper {
+    width: 1120px;
+    margin: auto;
+  }
+
+  .about-con {
+    justify-content: space-between;
+  }
+
+  .about {
+    width: 55%;
+  }
+
+  .contact {
+    width: 35%;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero-wrap {
+    width: 800px;
+  }
+
+  .thumb {
+    width: 31%;
+  }
+}
