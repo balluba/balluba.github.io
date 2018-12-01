@@ -1,0 +1,399 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.pc{
+  display: none;
+}
+
+#header {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  margin: auto 15px;
+}
+
+.top {
+  padding: 10px 0;
+  background-color: ForestGreen;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+}
+
+.top:hover {
+  background-color: darkGreen;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -30px;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-size: 18px;
+  margin: 0;
+}
+
+.bottom:hover {
+  background-color: #3d3d3d;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.whycontainer {
+  flex-wrap: wrap;
+  padding: 55px 0;
+}
+
+.why,.whyimg {
+  width: 100%;
+}
+
+.whyimg {
+  margin: 0 25px;
+}
+
+.why h1,.second h2{
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.why h2,.second h3 {
+  font-size: 50px;
+  color: ForestGreen;
+  padding-bottom: 30px;
+}
+
+.why p,.second p{
+  font-size: 20px;
+  color: #4d4d4d;
+  font-weight: 100;
+  padding-bottom: 15px;
+  line-height: 30px;
+}
+
+strong {
+  font-size: 30px;
+  color: black;
+}
+
+.why p i {
+  font-size: 25px;
+}
+
+.and {
+  color: ForestGreen;
+}
+
+.app {
+  color: black;
+}
+
+.win {
+  color: dodgerBlue;
+}
+
+.downbutton {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  font-size: 20px;
+  color: #4d4d4d;
+  margin-bottom: 15px;
+}
+
+.downbutton i {
+  color: black;
+}
+
+.downbutton:hover {
+  background-color: lightgrey;
+}
+
+.secondblockcon {
+  padding: 60px 0;
+  background-color:HoneyDew;
+}
+
+.second h3 {
+  color: red;
+}
+
+.second p {
+  padding-bottom: 0;
+}
+
+.thirdblockcon {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.thirdcon h3 {
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.thirdcon p{
+  padding-bottom: 70px;
+  padding-top: 20px;
+}
+
+.icon > div {
+  width: 25%;
+  text-align: center;
+
+}
+
+.icon > div i {
+  font-size: 64px;
+}
+
+.pricingcon {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.pricingcon h3 {
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+
+.pricingcon p {
+  padding-bottom: 70px;
+}
+
+table,tr,td {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.tablecon {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+table {
+  width:100%;
+  box-shadow: 3px 3px 3px lightgrey;
+  margin: 20px 0;
+}
+
+.basic th,.premium th{
+  padding: 35px 0;
+  font-weight: lighter;
+  font-size: 25px;
+  background-color: #3d3d3d;
+  color: white;
+}
+
+.premium th {
+  background-color: tomato;
+}
+
+table tr td {
+  padding: 15px 0;
+}
+
+tbody tr td, table tr td strong {
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.price {
+  padding: 30px;
+  font-size: 30px;
+  color: grey;
+}
+
+tfoot {
+  background-color: lightgrey;
+}
+
+tfoot tr td {
+  padding: 25px 0;
+}
+
+tfoot button {
+  background-color: black;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+}
+
+tfoot button:hover {
+  background-color: green;
+}
+
+footer {
+  text-align: center;
+  background-color: lightgrey;
+  padding: 60px 0;
+}
+
+footer i:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+small {
+  display: block;
+  font-size: 15px;
+  padding-top: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+
+  .mobile {
+    display: none;
+  }
+
+  .pc {
+    display: block;
+  }
+
+  .left {
+    background-color: rgba(0,0,0,0.6);
+    padding: 20px;
+    color: white;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  .left:hover {
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  .left h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    font-weight: 100;
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 22px;
+    padding: 15px 0;
+  }
+
+  .pcdown {
+    width: 100%;
+    background-color: royalBlue;
+    padding: 8px 0;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .pcdown:hover {
+    background-color: dodgerBlue;
+  }
+
+  .pctour {
+    font-size: 20px;
+    color:white;
+    padding: 8px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: 43%;
+    right: 20px;
+  }
+
+  .pctour:hover {
+    background-color: #1d1d1d;
+  }
+
+  .whycontainer{
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .why{
+    width: 68%;
+  }
+
+  .why h1 {
+    padding-top: 20px;
+  }
+
+  .whyimg {
+    width: 26%;
+    margin: 0;
+  }
+
+  .why p {
+    padding-bottom: 0;
+  }
+
+
+  .downbutton {
+    width: 28%;
+    padding: 10px;
+    background-color: lightgrey;
+    color: black;
+    margin: 35px 0;
+  }
+
+  .downbutton:hover {
+    background-color: grey;
+  }
+
+  .secondblockcon {
+    margin-top: 50px;
+  }
+
+  .con {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .secimg{
+    width: 26%;
+  }
+
+  .second {
+    width: 67%;
+  }
+
+  .second h2 {
+    padding-top: 20px;
+  }
+
+  .icon > div i {
+    font-size: 70px;
+  }
+
+  table {
+    width:49%;
+  }
+}
