@@ -5,6 +5,10 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: ghostWhite;
 }
@@ -230,6 +234,30 @@ nav {
   padding-top: 4px;
 }
 
+footer {
+  background-color: white;
+  font-size: 18px;
+  padding: 50px 0;
+  color: grey;
+}
+
+.footerl {
+  width:65%;
+}
+
+.footerl p {
+  line-height: 35px;
+}
+
+.footerr {
+  width: 35%;
+}
+
+.footerr a {
+  display: inline-block;
+  float: right;
+}
+
 
 @media screen and (min-width: 1120px){
   .wrapper {
@@ -255,6 +283,10 @@ nav {
 
   .hero-wrap {
     width: 800px;
+  }
+
+  .thumb-con {
+    padding-bottom: 50px;
   }
 
   .thumb {
