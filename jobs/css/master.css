@@ -1,0 +1,191 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.wrapper{
+  width: 90%;
+  margin: auto;
+}
+
+button{
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #4d80e4;
+}
+
+button:hover{
+  background: #2e279d;
+  cursor: pointer;
+  color: #dff6f0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main{
+  background: #eeeeee;
+}
+
+.hero{
+  justify-content: left;
+  align-items: center;
+  height: 60vh;
+  flex-direction: row;
+  /*background-image: url('../images/heroni.png');
+  background-size:68%;
+  background-repeat: no-repeat;
+  background-position: right;*/
+}
+
+.text h1{
+  font-size: 46px;
+}
+
+.flex_con{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_con{
+  display: inline-block;
+  width: 70%;
+
+}
+
+#menu {
+  font-size: 28px;
+  background: transparent;
+  font-weight: lighter;
+  color: #32e0c4;
+
+}
+
+.logo_con p{
+  display: inline-block;
+  font-family: 'Charm';
+}
+
+#nav_con{
+  position: absolute;
+  transition: 2s;
+  overflow: auto;
+  background: #f4f4f8;
+  left: 0%;
+  width: 250px;
+  height: 100vh;
+  overflow:auto;
+  display: none;
+  padding: 0 20px;
+  box-shadow: 2px 2px 3px grey;
+}
+
+#nav_con li{
+
+}
+
+.cat_drop a{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.buttoncon{
+  display: inline-block;
+  width: 30%;
+  position: relative;
+}
+
+#left_arrow{
+  font-size: 20px;
+  padding: 5px 8px;
+  background-color: transparent;
+}
+
+#left_arrow:hover {
+  color: blue;
+}
+
+.cat_drop {
+
+}
+
+.cat_drop li{
+  color: green;
+}
+
+.reg_opt{
+  position: absolute;
+  top:40px;
+  right:0px;
+  background: #f4f4f8;
+  width: 120%;
+  display: none;
+  box-shadow: 2px 2px 3px grey;
+}
+
+.reg_opt li{
+  text-align: left;
+}
+
+.reg_opt li a{
+  display: inline-block;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.reg_opt li a:hover{
+  background-color: #46b3e6;
+}
+
+#r_button{
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+
+
+
+
+
+
+/* .flex_con{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 80vh;
+  flex-direction: row;
+  background-image: url('../images/heroni.png');
+  background-size:68%;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: right;
+} */
+
+/* nav ul li:first-child{
+  width:40%;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+nav ul li:first-child a{
+  width:auto;
+  font-family: 'Charm';
+}
+
+nav ul li:first-child a:hover{
+  background-color: transparent;
+  color:#32e0c4;
+}
+*/

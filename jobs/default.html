@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Default</title>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+
+    <div class="main">
+      <nav>
+        <div class="wrapper flex_con">
+          <div class="logo_con">
+            <button type="button" name="button" id="menu" onclick="showit()"><i class="fa fa-bars"></i></button>
+            <p><a href="#">Mysite.com</a></p>
+          </div>
+          <div id="nav_con">
+            <ul >
+              <li style="text-align:left;"><button id="left_arrow" onclick="close_menu()"><i class="fa fa-arrow-left"></i></button></li>
+              <li class="intern">
+                Internships <i class="fa fa-sort-down"></i>
+                <ul class="cat_drop">
+                  <li><a href="#">Engineering Internships</a></li>
+                  <li><a href="#">MBA Internships</a></li>
+                  <li><a href="#">Computer Science</a></li>
+                </ul>
+              </li>
+              <li>
+                Dream Jobs <i class="fa fa-sort-down"></i>
+                <ul class="cat_drop">
+                  <li><a href="#">Engineering Internships</a></li>
+                  <li><a href="#">MBA Internships</a></li>
+                  <li><a href="#">Computer Science</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="buttoncon">
+            <button id="r_button" type="button" name="button" onclick="show_register()">Register <i class="fa fa-sort-down"></i></button>
+            <ul class="reg_opt">
+              <li><a href="#"> As a Student </a></li>
+              <li><a href="#"> As an Employee </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="flex_con wrapper hero">
+          <div class="text">
+            <h1>The easiest way to launch your career.</h1>
+            <p>Your dream job awaits here.</p>
+            <input type="text" name="" value="">
+            <button type="button" name="button">Search</button>
+          </div>
+        </div>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    function showit(){
+      var butt = document.getElementById('nav_con');
+      butt.style.display='block';
+    }
+
+    function show_register(){
+      var butt = document.getElementsByClassName('reg_opt')[0];
+      butt.style.display='block';
+    }
+
+    function close_menu(){
+      var butt = document.getElementById('nav_con');
+      butt.style.display='none';
+    }
+
+
+  </script>
+</html>
