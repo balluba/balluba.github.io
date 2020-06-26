@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Default</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="nav_con wrapper flex_con">
+          <div class="logo_con">
+            <button type="button" name="menu" id="menu_bar" onclick="show_menu();"><i class="fa fa-bars"></i></button>
+            <a href="#"> Mysite.xyz </a>
+          </div>
+          <div class="toggle flex_con">
+            <div class="mobile">
+              <button type="button" name="hide" id="left_arrow" onclick="hide_menu();"><i class="fa fa-arrow-left"></i></button>
+            </div>
+            <div class="drop_con">
+              <a href="#" onclick="show_interns();"> Internships <i class="fa fa-caret-down"></i> </a>
+              <ul class="dropdown interns">
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Enginnering Intern</a></li>
+                <li><a href="#">MBA Intern</a></li>
+                <li><a href="#">Others</a></li>
+                <li><a href="#">View All Internships</a></li>
+              </ul>
+            </div>
+            <div class="drop_con">
+            <a href="#" onclick="show_jobs();"> Jobs <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown jobs">
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Enginnering Jobs</a></li>
+                <li><a href="#">MBA Jobs</a></li>
+                <li><a href="#">Others</a></li>
+                <li><a href="#">View All Jobs</a></li>
+              </ul>
+            </div>
+            <div class="login_con">
+              <button type="button" name="login" id="login"> Login </button>
+            </div>
+          </div>
+          <div class="reg_con">
+            <button type="button" name="register" id="register"> Register </button>
+          </div>
+        </div>
+      </nav>
+      <div class="hero flex_con wrapper">
+        <div class="text">
+          <h1>The Easiest Way to Launch Your Career.</h1>
+          <p>More than 1000 interns and jobs in various fields.</p>
+          <form class="flex_con search" action="#" method="post">
+            <input type="text" name="" value="" placeholder="Find your dream...">
+            <button type="submit" name="search"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+    <!--  <div class="how">
+        <h3>Why you'll love Mysite.xyz?</h3>
+        <div class="flex_con how_con">
+          <section>
+            <i class="fa fa-suitcase"></i>
+            <h4>Jobs right for you</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam.
+            </p>
+          </section>
+          <section>
+            <i class="fa fa-paper-plane"></i>
+            <h4>Easy job application</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam.
+            </p>
+          </section>
+          <section>
+            <i class="fa fa-volume-control-phone"></i>
+            <h4>Support from the team</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam..
+            </p>
+          </section>
+        </div>
+      </div> -->
+
+      <div class="intern_cat">
+        <h3>Internships</h3>
+        <p>Apply to 1000+ internships for free.</p>
+        <div class="flex_con icon_con">
+          <a href="#">
+            <div>
+              <i class="fa fa-code icon"></i><span>Computer Science</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="fa fa-cogs icon"></i><span>Enginnering</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="fa fa-cutlery icon"></i><span>Hospitality</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="fa fa-gavel icon"></i><span>Law</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="fa fa-pie-chart icon"></i><span>Management</span>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="fa fa-handshake-o icon"></i><span>NGO</span>
+            </div>
+          </a>
+        </div>
+        <p><a href="#">View all internships</a></p>
+      </div>
+
+      <div class="how">
+        <h3>How it works?</h3>
+        <div class="how_con flex_con">
+          <section>
+            <i class="fa fa-user-o"></i>
+            <h4>Create account</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.</p>
+          </section>
+          <section>
+            <i class="fa fa-search"></i>
+            <h4>Search interns/Jobs</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.</p>
+          </section>
+          <section>
+            <i class="fa fa-paper-plane-o"></i>
+            <h4>Apply</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+
+  <script type="text/javascript">
+    function show_menu(){
+      var target = document.getElementsByClassName('toggle')[0];
+      target.style.display = 'block';
+    }
+
+    function hide_menu(){
+      var target = document.getElementsByClassName('toggle')[0];
+      target.style.display = 'none';
+    }
+
+    function show_interns(){
+      var target = document.getElementsByClassName('interns')[0];
+      target.style.display = 'block';
+    }
+
+    function show_jobs(){
+      var target = document.getElementsByClassName('jobs')[0];
+      target.style.display = 'block';
+    }
+  </script>
+</html>
