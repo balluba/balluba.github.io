@@ -233,6 +233,10 @@ li {
    display: block;
  }
 
+ span {
+   font-size: 14px;
+ }
+
 .icon{
   font-size: 45px;
   padding-bottom: 10px;
