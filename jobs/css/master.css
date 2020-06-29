@@ -174,7 +174,7 @@ form {
 }
 
 .search input{
-  width: 80%;
+  width: 76%;
   border: 1px solid grey;
   border-radius: 8px;
   height: 38px;
@@ -184,7 +184,7 @@ form {
 
 .search button{
   position: absolute;
-  right:19%;
+  right:13%;
   height:40px;
   width: 30px;
   background-color: transparent;
