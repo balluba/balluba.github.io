@@ -102,14 +102,16 @@ li {
 }
 
 .toggle {
+  z-index: 1;
   position: absolute;
   left:0;
   top:0;
-  width: 230px;
-  background-color: #ffffff;
+  width: 250px;
+  background-image: linear-gradient(to bottom, #dde3f0 , #b5bccc);
   padding: 10px;
   flex-direction: column;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .toggle > div{
@@ -118,6 +120,11 @@ li {
 
 .toggle > div a {
   cursor: pointer;
+}
+
+#left_arrow {
+  padding: 5px 8px;
+  background: transparent;
 }
 
 #register{
@@ -134,10 +141,15 @@ li {
   display: none;
 }
 
+.dropdown a {
+  display: block;
+  padding: 10px;
+}
+
 .hero{
   justify-content: left;
   align-items: center;
-  height: 60vh;
+  height: 50vh;
   flex-direction: row;
 }
 
@@ -153,24 +165,33 @@ li {
 
 form {
   padding-top: 10px;
+  justify-content: center;
+  position: relative;
 }
 
-.text input{
-  width: 70%;
+.search {
+  margin-top: 8px;
+}
+
+.search input{
+  width: 64%;
   border: 1px solid grey;
-  border-radius: 8px 0 0 8px;
+  border-radius: 8px;
   height: 38px;
   text-indent: 5px;
   outline: none;
 }
 
-.text button{
+.search button{
+  position: absolute;
+  right:19%;
   height:40px;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
-  border-radius: 0 8px 8px 0;
-  width: 50px;
+  width: 30px;
+  background-color: transparent;
+}
+
+.search button:hover {
+  color: #2e279d;
 }
 
 /* HOW
