@@ -457,64 +457,79 @@ footer{
   border-top: 1px solid gray;
   padding: 14px 0;
 }
-/* DESKTOP
 @media only screen and (min-width: 1100px) {
-.wrapper {
-  width: 1100px;
+  .wrapper {
+    width: 1100px;
+  }
+
+
+
+  .toggle {
+    display:inline-flex;
+    height:auto;
+    flex-direction: row;
+    background: transparent;
+    width:45%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    position: static;
+    z-index: 4 !important;
+  }
+
+  .logo_con{
+    width: 40%;
+  }
+
+  .logo_con a{
+    margin: 0;
+  }
+  .mobile {
+    display: none !important;
+  }
+
+  .toggle > div {
+    width: 33%;
+    position: relative;
+    text-align: center;
+  }
+
+  .reg_con{
+    width: 15%;
+  }
+
+  #register, #login{
+    width: 90%;
+    height: 40px;
+  }
+
+  #login {
+    margin: 0;
+    background: transparent;
+    border: 1px solid #4d80e4;
+  }
+
+  #login:hover{
+    background: #2e279d;
+    transition: 0.3s;
+  }
+
+  #register {
+    float: right;
+  }
+
+  .drop_con{
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+
+  }
+
 }
 
-
-
-.toggle {
-  flex-direction: row;
-  position: static;
-  background: transparent;
-  width:45%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
-}
-
-.logo_con{
-  width: 40%;
-}
-.mobile {
-  display: none;
-}
-
-.toggle > div {
-  width: 33%;
-  position: relative;
-  text-align: center;
-}
-
-.reg_con{
-  width: 15%;
-}
-
-#register, #login{
-  width: 90%;
-  height: 40px;
-}
-
-#login {
-  margin: 0;
-  background: transparent;
-  border: 1px solid #4d80e4;
-}
-
-#login:hover{
-  background: #2e279d;
-  transition: 0.3s;
-}
-
-#register {
-  float: right;
-}
-
-}
-
- END OF Desktop  */
 
 /* .hero{
   justify-content: left;
