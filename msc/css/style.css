@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto";
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.flex {
+  display: flex;
+}
+
+.header_con {
+  background-color: #fff;
+  padding: 20px 0;
+  position:fixed;
+  width: 100%;
+}
+
+.header_flex {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 92%;
+  margin: auto;
+}
+
+h1 {
+  /* font-family: 'Akronim'; */
+  color: tomato;
+  font-weight: lighter;
+}
+
+.logoCon {
+  width: 40%;
+  position: relative;
+  justify-content: space-between;
+}
+
+#bars {
+  font-size: 22px;
+  background: transparent;
+
+  font-weight: lighter;
+  border:none;
+  outline: none;
+  color: grey;
+}
+
+.inputCon {
+  width: 45%;
+  position: relative;
+}
+
+.inputCon input {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  height: 90%;
+  border-style: solid;
+  text-indent: 5px;
+  font-size: 18px;
+}
+
+#search {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: grey;
+}
+
+#search i {
+  font-size: 20px;
+  font-weight:100;
+}
+
+.side_nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.side_nav ul {
+  overflow: auto;
+  height: 100vh;
+}
+
+.side_nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 22px 20px;
+  border-bottom: 2px solid #f3f3f3;
+  list-style-type: none;
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.side_nav ul li a i {
+  font-size: 30px;
+}
+
+.active {
+  border-left: 4px solid tomato;
+  color: rgb(30, 144, 255) !important;
+}
+
+.main {
+  padding-top: 80px;
+}
+
+.selection {
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.manipur,.india {
+  color: #3a3a3a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-right: 5px;
+  transition: 0.5s ease;
+}
+
+.manipur:hover ,.india:hover {
+  cursor: pointer;
+  background: rgba(30, 144, 255, 0.5);
+}
+
+.selected {
+  background: rgb(30, 144, 255);
+}
+
+h2 {
+  color: #3a3a3a;
+  font-weight: lighter;
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+}
+
+.dashboard {
+  padding-top: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 48%;
+  padding: 35px 0;
+  color: #8f8f8f;
+  margin: 15px 0;
+  border: 2px solid;
+  box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
+}
+
+.case, .case i {
+  border-color: #9a56ff;
+  color: #9a56ff;
+}
+
+.reco, .reco i {
+  border-color: #32cd32;
+  color: #32cd32;
+}
+
+.dead, .dead i {
+  border-color: #e60c0c;
+  color: #e60c0c;
+}
+
+.acti, .acti i {
+  border-color: #f5365c;
+  color: #f5365c;
+}
+
+.column i {
+  font-size: 34px;
+}
+
+.num {
+  font-size: 30px;
+}
+
+
+#table_detail {
+  border-collapse: collapse;
+  width: 100%;
+  color: #3a3a3a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#table_detail td, #table_detail th {
+
+  padding: 8px;
+}
+
+#table_detail tr:nth-child(even){background-color: #fff;}
+
+#table_detail th:nth-child(4), #table_detail th:nth-child(5), #table_detail td:nth-child(4), #table_detail td:nth-child(5) {
+  display: none;
+}
+
+#table_detail th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: #ddd;
+}
+
+.toggleIndia {
+  display: none;
+}
+
+.news_con {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.main_news, .other_news1, .other_news2 {
+  width: 100%;
+  background-image: url("../images/3.jpg");
+  background-position:bottom;
+  background-size: cover;
+  height: 150px;
+  margin: 5px 0;
+  position: relative;
+  color: #ffe;
+  z-index: -1;
+}
+
+.main_news:hover, .other_news1:hover, .other_news2:hover {
+  transition: 0.2s ease;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+h5 {
+  font-weight: lighter;
+}
+
+.con h5, .con span{
+  font-size: 15px;
+}
+
+.con {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+
+.main_news .con h5 {
+  font-size: 18px;
+}
+
+.main_news .con span {
+  font-size: 14px;
+}
+
+.other_news1 {
+  height: 120px;
+  background-image: url("../images/1.jpg");
+  width: 49%;
+}
+
+.other_news2 {
+  height: 120px;
+  background-image: url("../images/2.jpg");
+  width: 49%;
+}
+
+.readmore {
+  width: 100%;
+  font-size: 15px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(30, 144, 255);
+  color: ;
+  padding: 8px 0;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.readmore:hover {
+  background-color: rgb(30, 144, 255);
+}
