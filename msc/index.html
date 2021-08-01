@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="header_con">
-      <header class="flex header_flex wrapper">
+      <header class="flex header_flex wrapper navWrap">
         <div class="logoCon flex">
           <button type="button" name="button" id="bars"> <i class="fa fa-bars kaiku"></i> </button>
           <h1>CovTrk</h1>
@@ -58,192 +58,227 @@
       </nav>
     </div>
 
-    <div class="main wrapper">
-      <h2>Tracker Dashboard</h2>
-      <div class="selection flex">
-        <div class="manipur selected">
-          <h3>Manipur</h3>
+
+    <div class="wrapper flex">
+      <div class="navspace">
+
+      </div>
+      <div class="main">
+        <h2>Tracker Dashboard</h2>
+        <div class="selection flex">
+          <div class="manipur selected">
+            <h3>Manipur</h3>
+          </div>
+
+          <div class="india">
+            <h3>Whole India</h3>
+            <span></span>
+          </div>
         </div>
 
-        <div class="india">
-          <h3>Whole India</h3>
-          <span></span>
+        <div class="toggleManipur">
+          <div class="dashboard flex">
+            <div class="column case">
+              <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 1234 </span>
+            </div>
+
+            <div class="column reco">
+              <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 1984 </span>
+            </div>
+
+            <div class="column dead">
+              <i class="fa fa-hotel"></i> <br> <span> New Death </span> <br> <br> <span class="num"> 19 </span>
+            </div>
+
+            <div class="column acti">
+              <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 3452 </span>
+            </div>
+          </div>
+
+          <div class="table">
+            <h2>Statistics</h2>
+          </div>
+          <table id="table_detail">
+            <tr>
+              <th>District</th>
+              <th>New Cases</th>
+              <th>Newly Recovered</th>
+              <th>New Death</th>
+              <th>Active Cases</th>
+            </tr>
+            <tr>
+              <td>Imphal West</td>
+              <td>2</td>
+              <td>4</td>
+              <td>235</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Imphal East</td>
+              <td>235</td>
+              <td>569</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Bishnupur</td>
+              <td>1245</td>
+              <td>8947</td>
+              <td>569</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Thoubal</td>
+              <td>345</td>
+              <td>463</td>
+              <td>8947</td>
+              <td>569</td>
+            </tr>
+            <tr>
+              <td>Nonne</td>
+              <td>567</td>
+              <td>867</td>
+              <td>463</td>
+              <td>8947</td>
+            </tr>
+            <tr>
+              <td>Others</td>
+              <td>135</td>
+              <td>436</td>
+              <td>567</td>
+              <td>867</td>
+            </tr>
+          </table>
         </div>
+
+        <div class="toggleIndia">
+          <div class="dashboard flex">
+            <div class="column case">
+              <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 74125 </span>
+            </div>
+
+            <div class="column reco">
+              <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 39874 </span>
+            </div>
+
+            <div class="column dead">
+              <i class="fa fa-hotel"></i> <br> <span> New Deadth </span> <br> <br> <span class="num"> 1247 </span>
+            </div>
+
+            <div class="column acti">
+              <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 1234789 </span>
+            </div>
+          </div>
+
+          <div class="table">
+            <h2>Statistics</h2>
+          </div>
+          <table id="table_detail">
+            <tr>
+              <th>Country</th>
+              <th>New Cases</th>
+              <th>Newly Recovered</th>
+              <th>New Death</th>
+              <th>Active Cases</th>
+            </tr>
+            <tr>
+              <td>Andaman and Nicobar</td>
+              <td>235</td>
+              <td>569</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Bangalore</td>
+              <td>345</td>
+              <td>463</td>
+              <td>8947</td>
+              <td>569</td>
+            </tr>
+            <tr>
+              <td>Delhi</td>
+              <td>235</td>
+              <td>569</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Himachal Pradesh</td>
+              <td>2</td>
+              <td>4</td>
+              <td>235</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Jamu and Kashmir</td>
+              <td>135</td>
+              <td>436</td>
+              <td>567</td>
+              <td>867</td>
+            </tr>
+            <tr>
+              <td>Manipur</td>
+              <td>567</td>
+              <td>867</td>
+              <td>463</td>
+              <td>8947</td>
+            </tr>
+          </table>
+        </div>
+
+        <h2>Featured News</h2>
+        <div class="news_con flex">
+          <div class="main_news">
+            <div class="con">
+              <h5>New vaccine to test in India.</h5>
+              <span>August 1, 2021</span>
+            </div>
+            <button type="button" name="button" class="fa fa-arrow-right"></button>
+          </div>
+          <div class="other_news1">
+            <div class="con">
+              <h5>Header of the news.</h5>
+              <span>August 1, 2021</span>
+            </div>
+            <button type="button" name="button" class="fa fa-arrow-right"></button>
+          </div>
+          <div class="other_news2">
+            <div class="con">
+              <h5>Header of the news.</h5>
+              <span>August 1, 2021</span>
+            </div>
+            <button type="button" name="button" class="fa fa-arrow-right"></button>
+          </div>
+          <button type="button" name="button" class="readmore">more news</button>
+        </div>
+
+        <h2>Featured Articles</h2>
+        <div class="article_con flex">
+          <div class="arti">
+            <img src="images/7.jpg" alt="">
+            <h5>The title of the Article</h5>
+            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
+            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
+          </div>
+
+          <div class="arti">
+            <img src="images/4.jpg" alt="">
+            <h5>The title of the Article</h5>
+            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
+            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
+          </div>
+
+          <div class="arti">
+            <img src="images/5.jpg" alt="">
+            <h5>The title of the Article</h5>
+            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
+            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
+          </div>
+        </div>
+        <button type="button" name="button" class="readmore">more articles</button>
+      </div>
       </div>
 
-      <div class="toggleManipur">
-        <div class="dashboard flex">
-          <div class="column case">
-            <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 1234 </span>
-          </div>
-
-          <div class="column reco">
-            <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 1984 </span>
-          </div>
-
-          <div class="column dead">
-            <i class="fa fa-hotel"></i> <br> <span> New Death </span> <br> <br> <span class="num"> 19 </span>
-          </div>
-
-          <div class="column acti">
-            <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 3452 </span>
-          </div>
-        </div>
-
-        <div class="table">
-          <h2>Statistics</h2>
-        </div>
-        <table id="table_detail">
-          <tr>
-            <th>District</th>
-            <th>New Cases</th>
-            <th>Newly Recovered</th>
-            <th>New Death</th>
-            <th>Active Cases</th>
-          </tr>
-          <tr>
-            <td>Imphal West</td>
-            <td>2</td>
-            <td>4</td>
-            <td>235</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Imphal East</td>
-            <td>235</td>
-            <td>569</td>
-            <td>2</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Bishnupur</td>
-            <td>1245</td>
-            <td>8947</td>
-            <td>569</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Thoubal</td>
-            <td>345</td>
-            <td>463</td>
-            <td>8947</td>
-            <td>569</td>
-          </tr>
-          <tr>
-            <td>Nonne</td>
-            <td>567</td>
-            <td>867</td>
-            <td>463</td>
-            <td>8947</td>
-          </tr>
-          <tr>
-            <td>Others</td>
-            <td>135</td>
-            <td>436</td>
-            <td>567</td>
-            <td>867</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="toggleIndia">
-        <div class="dashboard flex">
-          <div class="column case">
-            <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 74125 </span>
-          </div>
-
-          <div class="column reco">
-            <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 39874 </span>
-          </div>
-
-          <div class="column dead">
-            <i class="fa fa-hotel"></i> <br> <span> New Deadth </span> <br> <br> <span class="num"> 1247 </span>
-          </div>
-
-          <div class="column acti">
-            <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 1234789 </span>
-          </div>
-        </div>
-
-        <div class="table">
-          <h2>Statistics</h2>
-        </div>
-        <table id="table_detail">
-          <tr>
-            <th>Country</th>
-            <th>New Cases</th>
-            <th>Newly Recovered</th>
-            <th>New Death</th>
-            <th>Active Cases</th>
-          </tr>
-          <tr>
-            <td>Andaman and Nicobar</td>
-            <td>235</td>
-            <td>569</td>
-            <td>2</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Bangalore</td>
-            <td>345</td>
-            <td>463</td>
-            <td>8947</td>
-            <td>569</td>
-          </tr>
-          <tr>
-            <td>Delhi</td>
-            <td>235</td>
-            <td>569</td>
-            <td>2</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Himachal Pradesh</td>
-            <td>2</td>
-            <td>4</td>
-            <td>235</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Jamu and Kashmir</td>
-            <td>135</td>
-            <td>436</td>
-            <td>567</td>
-            <td>867</td>
-          </tr>
-          <tr>
-            <td>Manipur</td>
-            <td>567</td>
-            <td>867</td>
-            <td>463</td>
-            <td>8947</td>
-          </tr>
-        </table>
-      </div>
-
-      <h2>Featured News</h2>
-      <div class="news_con flex">
-        <div class="main_news">
-          <div class="con">
-            <h5>New vaccine to test in India.</h5>
-            <span>August 1, 2021</span>
-          </div>
-        </div>
-        <div class="other_news1">
-          <div class="con">
-            <h5>Header of the news.</h5>
-            <span>August 1, 2021</span>
-          </div>
-        </div>
-        <div class="other_news2">
-          <div class="con">
-            <h5>Header of the news.</h5>
-            <span>August 1, 2021</span>
-          </div>
-        </div>
-        <button type="button" name="button" class="readmore">read more</button>
-      </div>
-    </div>
   </body>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 
