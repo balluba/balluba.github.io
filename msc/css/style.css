@@ -23,6 +23,7 @@ html {
   position:fixed;
   width: 100%;
   z-index: 998;
+  box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
 }
 
 .header_flex {
@@ -41,7 +42,7 @@ h1 {
 }
 
 .logoCon {
-  width: 40%;
+  width: 35%;
   position: relative;
   justify-content: space-between;
 }
@@ -57,8 +58,22 @@ h1 {
 }
 
 .inputCon {
-  width: 45%;
-  position: relative;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+.inputCon a{
+  display: inline-block;
+  padding: 10px 5px;
+  margin-left: 15px;
+  color: dodgerblue;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.inputCon a:first-child {
+  margin: 0;
 }
 
 .inputCon input {
@@ -95,6 +110,7 @@ h1 {
   top: 100%;
   background-color: #fff;
   z-index: 999;
+  box-shadow: 0 1px 15px rgb(0 0 0 / 4%), 0 1px 6px rgb(0 0 0 / 4%);
 }
 
 .side_nav ul {
@@ -391,8 +407,8 @@ h5 {
 }
 
 .mini:hover, .focus:hover {
-  background-color: #aaa;
-  cursor:pointer;
+  background-color: rgba(255,255,255, 0.1);
+  color: orange;
 }
 
 .main_news .con h5 {
@@ -525,6 +541,47 @@ h5 {
   color: #333;
 }
 
+.footerCon {
+  background-color: #2a2e36;
+  color: #eee;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footerCon .main {
+  padding: 0;
+}
+
+.fcon {
+  padding: 15px;
+}
+
+.fcon h5 {
+  font-size: 40px;
+  padding: 15px 0;
+}
+
+.fcon p {
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
+.no {
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.no a{
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 18px;
+}
+
+.copy{
+  padding-top:15px;
+}
+
+
 
 @media only screen and (min-width: 1100px) {
   .navspace {
@@ -533,7 +590,7 @@ h5 {
 
 
   .navWrap {
-    width: 98%;
+    width: 96%;
     margin: auto;
   }
 
@@ -585,6 +642,7 @@ h5 {
   .other_news1, .other_news2 {
     width: 100%;
     height: 47%;
+    background-position:center;
   }
 
   .other_news1 .mini, .other_news2 .mini {
