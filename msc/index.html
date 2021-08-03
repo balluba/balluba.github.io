@@ -64,7 +64,7 @@
 
       </div>
       <div class="main">
-        <h2>Tracker Dashboard</h2>
+        <h2>Tracker <span class="orange">Dashboard</span></h2>
         <div class="selection flex">
           <div class="manipur selected">
             <h3>Manipur</h3>
@@ -76,207 +76,302 @@
           </div>
         </div>
 
-        <div class="toggleManipur">
           <div class="dashboard flex">
             <div class="column case">
-              <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 1234 </span>
+              <i class="fa fa-ambulance"></i> <br> <span class="note"> New Cases </span> <br> <span class="num mn"> 1234 </span>
+              <span class="num in"> 1247 </span>
             </div>
 
             <div class="column reco">
-              <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 1984 </span>
+              <i class="fa fa-heartbeat"></i> <br> <span class="note"> Newly Recovered </span> <br> <span class="num mn"> 1984 </span>
+              <span class="num in"> 1478 </span>
             </div>
 
             <div class="column dead">
-              <i class="fa fa-hotel"></i> <br> <span> New Death </span> <br> <br> <span class="num"> 19 </span>
+              <i class="fa fa-hotel"></i> <br> <span class="note"> New Death </span> <br> <span class="num mn"> 19 </span>
+              <span class="num in"> 1789 </span>
             </div>
 
             <div class="column acti">
-              <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 3452 </span>
+              <i class="fa fa-hospital-o"></i> <br> <span class="note"> Active Cases </span> <br> <span class="num mn"> 3452 </span>
+              <span class="num in"> 147893 </span>
             </div>
           </div>
 
-          <div class="table">
-            <h2>Statistics</h2>
+          <div class="flex tablePre">
+            <div class="table toggleManipur">
+              <h2><span class="orange">Manipur</span> Record</h2>
+              <table id="table_detail">
+                <tr>
+                  <th>District</th>
+                  <th>New Cases</th>
+                  <th>Active Cases</th>
+                  <th>New Death</th>
+                  <th>New Recovered</th>
+                </tr>
+                <tr>
+                  <td>Imphal West</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>235</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Imphal East</td>
+                  <td>235</td>
+                  <td>569</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Bishnupur</td>
+                  <td>1245</td>
+                  <td>8947</td>
+                  <td>569</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Thoubal</td>
+                  <td>345</td>
+                  <td>463</td>
+                  <td>8947</td>
+                  <td>569</td>
+                </tr>
+                <tr>
+                  <td>Nonne</td>
+                  <td>567</td>
+                  <td>867</td>
+                  <td>463</td>
+                  <td>8947</td>
+                </tr>
+                <tr>
+                  <td>Others</td>
+                  <td>135</td>
+                  <td>436</td>
+                  <td>567</td>
+                  <td>867</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="table toggleIndia">
+              <h2><span class="orange">India</span> Record</h2>
+              <table id="table_detail">
+                <tr>
+                  <th>Country</th>
+                  <th>New Cases</th>
+                  <th>Newl Recovered</th>
+                  <th>New Death</th>
+                  <th>Active Cases</th>
+                </tr>
+                <tr>
+                  <td>Andaman and Nicobar</td>
+                  <td>235</td>
+                  <td>569</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Bangalore</td>
+                  <td>345</td>
+                  <td>463</td>
+                  <td>8947</td>
+                  <td>569</td>
+                </tr>
+                <tr>
+                  <td>Delhi</td>
+                  <td>235</td>
+                  <td>569</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Himachal Pradesh</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>235</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Jamu and Kashmir</td>
+                  <td>135</td>
+                  <td>436</td>
+                  <td>567</td>
+                  <td>867</td>
+                </tr>
+                <tr>
+                  <td>Manipur</td>
+                  <td>567</td>
+                  <td>867</td>
+                  <td>463</td>
+                  <td>8947</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="precaution">
+              <h2><span class="orange">Preventing</span> CoVID 19 </h2>
+              <div class="flex preCon">
+                <div class="preImage">
+                  <img src="images/home.png" alt="">
+                </div>
+                <div class="preDes">
+                  <h6>Stay Home</h6>
+                  <p>Practice social distancing and don’t leave your your home without any urgent need to stay safe.</p>
+                </div>
+              </div>
+
+              <div class="flex preCon">
+                <div class="preImage">
+                  <img src="images/wash.png" alt="">
+                </div>
+                <div class="preDes">
+                  <h6>Wash Hands</h6>
+                  <p>Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.</p>
+                </div>
+              </div>
+
+              <div class="flex preCon">
+                <div class="preImage">
+                  <img src="images/mask.png" alt="">
+                </div>
+                <div class="preDes">
+                  <h6>Wear a Mask</h6>
+                  <p>Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose.</p>
+                </div>
+              </div>
+
+              <div class="flex preCon">
+                <div class="preImage">
+                  <img src="images/distance.png" alt="">
+                </div>
+                <div class="preDes">
+                  <h6>Maintain Social Distance</h6>
+                  <p>Maintain at least 2 metre (6 feet) distance between yourself and anyone who is coughing or sneezing.</p>
+                </div>
+              </div>
+
+              <div class="flex preCon">
+                <div class="preImage">
+                  <img src="images/hand.png" alt="">
+                </div>
+                <div class="preDes">
+                  <h6>Avoid Physical Contact</h6>
+                  <p>Avoiding any direct contact allows you to increase your protection from the emerged COVID-19.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <table id="table_detail">
-            <tr>
-              <th>District</th>
-              <th>New Cases</th>
-              <th>Newly Recovered</th>
-              <th>New Death</th>
-              <th>Active Cases</th>
-            </tr>
-            <tr>
-              <td>Imphal West</td>
-              <td>2</td>
-              <td>4</td>
-              <td>235</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Imphal East</td>
-              <td>235</td>
-              <td>569</td>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>Bishnupur</td>
-              <td>1245</td>
-              <td>8947</td>
-              <td>569</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Thoubal</td>
-              <td>345</td>
-              <td>463</td>
-              <td>8947</td>
-              <td>569</td>
-            </tr>
-            <tr>
-              <td>Nonne</td>
-              <td>567</td>
-              <td>867</td>
-              <td>463</td>
-              <td>8947</td>
-            </tr>
-            <tr>
-              <td>Others</td>
-              <td>135</td>
-              <td>436</td>
-              <td>567</td>
-              <td>867</td>
-            </tr>
-          </table>
+
+
+
+        <div class="news">
+          <h2><span class="orange">Latest</span> News</h2>
+          <div class="news_con flex">
+            <div class="block1">
+              <div class="main_news">
+                <div class="con">
+                  <h5>New vaccine to test in India.</h5>
+                  <span>August 1, 2021</span>
+                </div>
+                <button type="button" name="button" class="focus"> <i class="fa fa-arrow-right">  </i> </button>
+              </div>
+            </div>
+
+            <div class="block2 flex">
+              <div class="other_news1">
+                <div class="con">
+                  <h5>Header of the news.</h5>
+                  <span>August 1, 2021</span>
+                </div>
+                <button type="button" name="button" class="mini"> <i class="fa fa-arrow-right">  </i> </button>
+              </div>
+              <div class="other_news2">
+                <div class="con">
+                  <h5>Header of the news.</h5>
+                  <span>August 1, 2021</span>
+                </div>
+                <button type="button" name="button" class="mini"> <i class="fa fa-arrow-right">  </i> </button>
+              </div>
+            </div>
+
+          </div>
+          <a href="#" class="readmore"> want more.. </a>
         </div>
 
-        <div class="toggleIndia">
-          <div class="dashboard flex">
-            <div class="column case">
-              <i class="fa fa-ambulance"></i> <br> <span> New Cases </span> <br> <br> <span class="num"> 74125 </span>
+        <div class="article">
+          <h2><span class="orange">Latest</span> Articles</h2>
+          <div class="article_con flex">
+            <div class="arti">
+              <img src="images/7.jpg" alt="">
+              <h5>The title of the Article</h5>
+              <span> Author: <strong>Balluba P.</strong> </span> <span>July 31, 2021</span>
             </div>
 
-            <div class="column reco">
-              <i class="fa fa-heartbeat"></i> <br> <span> Newly Recovered </span> <br> <br> <span class="num"> 39874 </span>
+            <div class="arti">
+              <img src="images/4.jpg" alt="">
+              <h5>The title of the Article</h5>
+              <span> Author: <strong>Balluba P.</strong> </span> <span>July 31, 2021</span>
             </div>
 
-            <div class="column dead">
-              <i class="fa fa-hotel"></i> <br> <span> New Deadth </span> <br> <br> <span class="num"> 1247 </span>
-            </div>
-
-            <div class="column acti">
-              <i class="fa fa-hospital-o"></i> <br> <span> Active Cases </span> <br> <br> <span class="num"> 1234789 </span>
+            <div class="arti">
+              <img src="images/5.jpg" alt="">
+              <h5>The title of the Article</h5>
+              <span> Author: <strong>Balluba P.</strong> </span> <span>July 31, 2021</span>
             </div>
           </div>
-
-          <div class="table">
-            <h2>Statistics</h2>
-          </div>
-          <table id="table_detail">
-            <tr>
-              <th>Country</th>
-              <th>New Cases</th>
-              <th>Newly Recovered</th>
-              <th>New Death</th>
-              <th>Active Cases</th>
-            </tr>
-            <tr>
-              <td>Andaman and Nicobar</td>
-              <td>235</td>
-              <td>569</td>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>Bangalore</td>
-              <td>345</td>
-              <td>463</td>
-              <td>8947</td>
-              <td>569</td>
-            </tr>
-            <tr>
-              <td>Delhi</td>
-              <td>235</td>
-              <td>569</td>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>Himachal Pradesh</td>
-              <td>2</td>
-              <td>4</td>
-              <td>235</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Jamu and Kashmir</td>
-              <td>135</td>
-              <td>436</td>
-              <td>567</td>
-              <td>867</td>
-            </tr>
-            <tr>
-              <td>Manipur</td>
-              <td>567</td>
-              <td>867</td>
-              <td>463</td>
-              <td>8947</td>
-            </tr>
-          </table>
+          <a href="#" class="readmore">read more...</a>
         </div>
 
-        <h2>Featured News</h2>
-        <div class="news_con flex">
-          <div class="main_news">
-            <div class="con">
-              <h5>New vaccine to test in India.</h5>
-              <span>August 1, 2021</span>
+        <div class="faq">
+          <h2><span class="orange">Frequently Asked</span> Questions</h2>
+          <div class="accordion">
+            <div class="set">
+              <span>
+                How does COVID-19 is spread?
+                <i class="fa fa-minus"></i>
+              </span>
+              <div class="content first">
+                <p>People can catch COVID-19 from others who have the virus. The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.</p>
+              </div>
             </div>
-            <button type="button" name="button" class="fa fa-arrow-right"></button>
-          </div>
-          <div class="other_news1">
-            <div class="con">
-              <h5>Header of the news.</h5>
-              <span>August 1, 2021</span>
+            <div class="set">
+              <span>
+                What are the symptoms of COVID-19?
+                <i class="fa fa-plus"></i>
+              </span>
+              <div class="content">
+                <p> The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty breathing should seek medical attention.</p>
+              </div>
             </div>
-            <button type="button" name="button" class="fa fa-arrow-right"></button>
-          </div>
-          <div class="other_news2">
-            <div class="con">
-              <h5>Header of the news.</h5>
-              <span>August 1, 2021</span>
+            <div class="set">
+              <span>
+                Who is at risk of developing severe illness?
+                <i class="fa fa-plus"></i>
+              </span>
+              <div class="content">
+                <p>While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to develop serious illness more often than others.</p>
+              </div>
             </div>
-            <button type="button" name="button" class="fa fa-arrow-right"></button>
+            <div class="set">
+              <span>
+                Are antibiotics effective in treating COVID-19?
+                <i class="fa fa-plus"></i>
+              </span>
+              <div class="content">
+                <p> No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection.</p>
+              </div>
+            </div>
           </div>
-          <button type="button" name="button" class="readmore">more news</button>
         </div>
 
-        <h2>Featured Articles</h2>
-        <div class="article_con flex">
-          <div class="arti">
-            <img src="images/7.jpg" alt="">
-            <h5>The title of the Article</h5>
-            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
-            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
-          </div>
 
-          <div class="arti">
-            <img src="images/4.jpg" alt="">
-            <h5>The title of the Article</h5>
-            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
-            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
-          </div>
-
-          <div class="arti">
-            <img src="images/5.jpg" alt="">
-            <h5>The title of the Article</h5>
-            <p>this is the body of the article. Lorem Ipsum adu ada ...</p>
-            <span> <strong>Balluba P.</strong> </span> <span>July 31</span>
-          </div>
         </div>
-        <button type="button" name="button" class="readmore">more articles</button>
-      </div>
+
+
+
+
+
       </div>
 
   </body>
