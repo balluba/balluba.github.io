@@ -767,6 +767,98 @@ h5 {
   display: none;
 }
 
+.rform_con {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px 0;
+
+}
+
+.re_form{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 40px 0;
+  text-align: center;
+
+}
+
+.re_img{
+  display: none;
+}
+
+.re_img {
+  width: 48%;
+}
+
+.re_img img {
+  max-width: 100%;
+}
+
+.re_form h3 {
+
+  font-weight: 300;
+
+  font-size: 34px;
+}
+
+.re_form span{
+
+  color: #515151;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.re_form p {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.rform_con form {
+
+}
+
+.form_control {
+  padding-bottom: 30px;
+}
+
+.form_control label {
+  display: inline-block;
+  width: 25px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form_control input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #888;
+  font-size: 14px;
+  text-indent: 2px;
+  width: 65%;
+  padding-bottom: 2px;
+}
+
+.form_table {
+  padding-top: 20px;
+}
+
+.form_table button {
+  display: inline-block;
+  border:none;
+  outline: none;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.signin {
+  padding: 80px 0;
+}
+
 @media only screen and (min-width: 1100px) {
   .navspace {
     width: 8%;
@@ -913,6 +1005,22 @@ h5 {
 
   .lists {
     width: 45%;
+  }
+
+  .re_form {
+    width: 40%;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .re_img img {
+    display: inline-block;
+  }
+
+  .re_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
