@@ -324,14 +324,17 @@ ul.exlist{
   padding-right: 1rem;
 }
 
-.sexpect button{
+
+.sexpect button, .bookbutt{
   padding: 0.8rem 1.5rem;
-  border: none;
-  outline: none;
-  background-color: orange;
-  border-radius: 0.4rem;
-  color: white;
-  font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: orange;
+    display: inline-block;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .info{
@@ -342,6 +345,10 @@ ul.exlist{
 .terms{
   display: inline;
   width: auto;
+}
+
+input.terms {
+  padding-left: 5px;
 }
 
 .jdes {
@@ -410,6 +417,17 @@ p.pricing{
   font-size: 1rem;
 }
 */
+
+.formcon{
+  width:94%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#jobform{
+  display: none;
+}
 
 @media (min-width: 992px){
 

@@ -1,5 +1,5 @@
 // search-box open close js code
-let navbar = document.querySelector(".navbar");
+/* let navbar = document.querySelector(".navbar");
 let searchBox = document.querySelector(".search-box .bx-search");
 // let searchBoxCancel = document.querySelector(".search-box .bx-x");
 searchBox.addEventListener("click", ()=>{
@@ -33,3 +33,16 @@ let jsArrow = document.querySelector(".js-arrow");
 jsArrow.onclick = function() {
  navLinks.classList.toggle("show3");
 }
+*/
+
+
+$(function(){
+
+  $("#service").change(function() {
+      if($("#service option:selected").val() == 'job') {
+        $("#jobform").show();
+      }else if($("#service option:selected").val() == 'tour'){
+        $("#jobform").hide();
+      }
+  })
+});
